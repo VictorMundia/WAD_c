@@ -4,32 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Eventhub - HomePage</title>
-  <style>
-    body {
-			background-color: #f5f5f5;
-			font-family: Arial, sans-serif;
-		}
-		header {
-			background-color: #333;
-			color: white;
-			padding: 1rem;
-			text-align: center;
-		}
-		nav {
-			background-color: #ddd;
-			padding: 0.5rem;
-			text-align: center;
-		}
-		nav a {
-			color: #333;
-			text-decoration: none;
-			padding: 0.5rem 1rem;
-		}
-		nav a:hover {
-			background-color: #333;
-    }
-    
-  </style>
+<link rel="stylesheet" href="/index.html">
 </head>
 
 <body  link="#ffc4c4">
@@ -48,6 +23,7 @@
     <a href="login.html">Login</a> |
     <a href="signup.html">Signup</a>
     </font>
+
     
 </nav>
 </header>
@@ -58,38 +34,6 @@
         <!-- Event list will be populated here -->
     </div>
 </main>
-<script>
-    document.getElementById('explore-btn').addEventListener('click', function() {
-        // Fetch events from server and populate event list
-        fetch('https://api.eventhive.com/events')
-            .then(function(response) {
-                return response.json();
-            })
-            .then(function(events) {
-                var eventList = document.getElementById('event-list');
-                eventList.innerHTML = '';
-                events.forEach(function(event) {
-                    var eventDiv = document.createElement('div');
-                    eventDiv.className = 'event';
-                    eventDiv.innerHTML = `
-                        <h2>${event.name}</h2>
-                        <p>${event.date} at ${event.time}</p>
-                        <p>${event.location}</p>
-                        <button class="apply-btn">Apply</button>
-                    `;
-                    eventList.appendChild(eventDiv);
-                });
-            });
-    });
-
-    document.addEventListener('click', function(event) {
-        if (event.target.classList.contains('apply-btn')) {
-            var eventDiv = event.target.closest('.event');
-            var eventName = eventDiv.querySelector('h2').textContent;
-            alert(`You have applied for the event: ${eventName}`);
-        }
-    });
-</script>
 <style>
     body {
         font-family: Arial, sans-serif;
@@ -138,5 +82,6 @@
         color: white;
         padding: 10px 20
     }
+    
 </body>
 </html>
