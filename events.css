@@ -34,7 +34,7 @@ nav {
   }
   
   .nav a:hover {
-    background-color: rgba(109, 0, 0, 0.324);
+    background-color: transparent;
     color: #fff;
   }
 .a{
@@ -49,3 +49,21 @@ nav {
 
 
 }
+.grid-container{
+    display: grid;
+    grid-template-columns:42rem 42rem ;
+    position:fixed;
+    top: 40%;
+    left: 98%;
+    transform: translate(-50%, -50%);
+    text-align: right;
+  }
+  
+  .p2{
+    color: #fff;
+    font-size: larger;
+  }
+  .h1{
+    font-size: 30px;
+    color: #ec0000;
+  }
