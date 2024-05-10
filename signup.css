@@ -57,9 +57,23 @@ nav {
     border-radius: 5px;
     opacity: 0.5;
   }
+
+  input[type="submit"] {
+    background-color: #4f2626;
+    color: #fff;
+    padding: 0.5rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+  }
+  input[type="submit"]:hover {
+    background-color: #3f1d1d;
+  }
   .signup-form input[type="text"],
 .signup-form input[type="email"],
 .signup-form input[type="password"] {
+    color: #ffffff;
   width: 100%;
   height: 40px;
   padding: 0.5rem;
