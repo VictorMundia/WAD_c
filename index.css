@@ -13,21 +13,14 @@
   
   h1 {
     font-size: 48px;
-    color: #e91e63;
-    font-weight: 700;
+    color: #000000;
+    font-weight: 300;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
     margin: 1rem 0;
     text-align: center;
   }
   
-  h2 {
-    font-size: 32px;
-    color: #4caf50;
-    font-weight: 500;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-    margin: 0.5rem 0;
-    text-align: center;
-  }
+
   
   nav {
     padding: 0rem 0;
@@ -48,19 +41,25 @@
     background-color: rgba(255, 255, 255, 0.1);
     color: #fff;
   }
-  .btn {
-    padding: 0.5rem 1rem;
-    background-color: #4CAF50;
-    color: #fff;
-    border: none;
-    border-radius: 0.25rem;
-    font-size: 1rem;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-  }
-  
-  .btn i {
-    margin-right: 0.5rem;
-  }
-  
+  .image-text {
+  display: flex;
+  align-items: center;
+}
+
+.image-text img {
+  float: left;
+  margin-right: 1rem;
+}
+
+.image-text .text {
+  margin-left: 0;
+}
+
+div{
+  float:inline-start
+}
+.content{
+ float: right;
+ text-align:center;
+ margin-left: 20px;
+}
