@@ -54,9 +54,9 @@ nav {
     grid-template-columns:42rem 42rem ;
     position:fixed;
     top: 40%;
-    left: 98%;
+    left: 55%;
     transform: translate(-50%, -50%);
-    text-align: right;
+    text-align: left;
   }
   
   .p2{
