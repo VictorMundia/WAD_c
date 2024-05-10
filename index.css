@@ -11,7 +11,7 @@
     align-items: right;
   }
   
-  h1 {
+  h1,h2 {
     font-size: 48px;
     color: #000000;
     font-weight: 300;
@@ -41,25 +41,12 @@
     background-color: rgba(255, 255, 255, 0.1);
     color: #fff;
   }
-  .image-text {
-  display: flex;
-  align-items: center;
-}
-
-.image-text img {
-  float: left;
-  margin-right: 1rem;
-}
-
-.image-text .text {
-  margin-left: 0;
-}
 
 div{
   float:inline-start
 }
-.content{
+.content,.content2{
  float: right;
  text-align:center;
- margin-left: 20px;
+ margin-left: 70px;
 }
