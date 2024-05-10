@@ -1,52 +1,51 @@
 
-  .left-nav {
-    display: flex;
-    justify-content: flex-start;
-    align-items: right;
-  }
   
-  .right-nav {
-    display: flex;
-    justify-content: flex-end;
-    align-items: right;
-  }
-  
-  h1,h2 {
-    font-size: 48px;
-    color: #000000;
-    font-weight: 300;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+
+  h1, h2 {
+    font-size: 100px;
+    font-style:initial;
+    font-family:'Bazooka' ;
+    color: #ff000085;
+    font-weight: 1000;
+    text-shadow: 
+      0 0 10px rgb(255, 0, 0),
+      1px 1px 2px rgba(255, 0, 0, 0.4); 
     margin: 1rem 0;
     text-align: center;
+    -webkit-text-stroke: 0.3px #ff0000; 
+     -webkit-text-fill-color: #f9f9f9e5;
   }
-  
 
   
   nav {
-    padding: 0rem 0;
-    background-color: rgba(133, 131, 131, 0.61);
-    text-align: right;
+    background-color:transparent;
+    text-align:right;
+    justify-content: flex-end;
   }
   
   nav a {
-    padding: 1rem 5rem;
+    padding: 1.5rem 1.5rem;
     text-decoration: none;
-    color: #4f2626;
+    color: #ff0000;
     font-weight: 500;
     transition: background-color 0.2s ease;
     font-family: 'Open Sans', sans-serif;
+    margin-left: 0;
   }
   
   nav a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(109, 0, 0, 0.324);
     color: #fff;
   }
-
-div{
-  float:inline-start
+body{
+  background-image: url('Images/EventHubpng/1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
-.content,.content2{
- float: right;
- text-align:center;
- margin-left: 70px;
+.p{
+  text-align: center;
+  font-size: 30px;
+  color: rgb(143, 0, 0);
 }
