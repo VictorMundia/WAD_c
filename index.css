@@ -18,13 +18,20 @@
 
   
   nav {
+    padding: 0rem;
+    background-color:transparent;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+  }
+  .nav{
     background-color:transparent;
     text-align:right;
     justify-content: flex-end;
   }
-  
   nav a {
-    padding: 1.5rem 1.5rem;
+    padding: 1rem 1rem;
     text-decoration: none;
     color: #ff0000;
     font-weight: 500;
@@ -33,8 +40,8 @@
     margin-left: 0;
   }
   
-  nav a:hover {
-    background-color: rgba(109, 0, 0, 0.324);
+  .nav a:hover {
+    background-color: transparent;
     color: #fff;
   }
 body{
