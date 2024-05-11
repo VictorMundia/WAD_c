@@ -17,3 +17,8 @@ nav a:first-child {
     justify-content: flex-end;
     flex-wrap: nowrap;
   }
+  .nav{
+    background-color:transparent;
+    text-align:right;
+    justify-content: flex-end;
+  }
