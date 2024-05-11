@@ -31,3 +31,7 @@ nav a:first-child {
     font-family: 'Open Sans', sans-serif;
     margin-left: 0;
   }
+  .nav a:hover {
+    background-color: transparent;
+    color: #fff;
+  }
