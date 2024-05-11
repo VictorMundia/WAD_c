@@ -22,3 +22,12 @@ nav a:first-child {
     text-align:right;
     justify-content: flex-end;
   }
+  nav a {
+    padding: 1rem 1rem;
+    text-decoration: none;
+    color: #ff0000;
+    font-weight: 500;
+    transition: background-color 0.2s ease;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 0;
+  }
