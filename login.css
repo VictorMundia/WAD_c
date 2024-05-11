@@ -9,3 +9,11 @@ nav a:first-child {
     order: -1;
     margin-right:auto;
   }
+  nav {
+    padding: 0rem;
+    background-color:transparent;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+  }
