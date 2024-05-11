@@ -5,3 +5,7 @@ body{
     background-position: center;
     background-attachment: fixed;
 }
+nav a:first-child {
+    order: -1;
+    margin-right:auto;
+  }
