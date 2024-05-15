@@ -1,5 +1,11 @@
 
-  
+body{
+  background-image: url('../Images/EventHubpng/1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
 
   h1, h2 {
     font-size: 100px;
@@ -48,13 +54,7 @@
     background-color: transparent;
     color: #fff;
   }
-body{
-  background-image: url('../Images/EventHubpng/1.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
+
 .p{
   text-align: center;
   font-size: 30px;
