@@ -49,7 +49,7 @@
     color: #fff;
   }
 body{
-  background-image: url('Images/EventHubpng/1.png');
+  background-image: url('../Images/EventHubpng/1.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
