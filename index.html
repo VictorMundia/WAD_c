@@ -4,22 +4,185 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="Styles/index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel = "icon" type="image/x-icon" href="Images/EventHubpng/favicon1.png">
+  
   <title>EventHub</title>
 </head>
-  <body>
-  <nav class="nav">
-    <a href="index.html"> <img src="Images/EventHubpng/logo2.png" alt="logo" class="hello"></a>
-    <a href="events.html">Events</a>
-    <a href="event-details.html">Event Details</a>
-    <a href="aboutus.html">AboutUs</a>
-    <a href="login.html">Login</a>
-    <a href="signup.html">Signup</a>
-  </nav>
-    
-  <h1>EVENT<br>HUB</h1>
-<p class="p"><B>DISCOVER EVENTS AROUND YOU!
-  </B>
-</p>
+  <body >
+    <section class="header">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="Images/EventHubpng/logo2.png" alt="logo" width="250px" height="50px"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item active">
+                <a class="nav-link " aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="aboutus.html" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                  menu
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="login.html">Action</a></li>
+                  <li><a class="dropdown-item" href="signup.html">Another action</a></li>
+                  <li><a class="dropdown-item" href="event-details.html">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+      <main class="my-5">
+        <h1 class="text-center">Welcome to EventHub</h1>
+       
+          <div id="carouselExampleSlideOnly" class="carousel slide bg-secondary" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="2000">
+              <img src="Images/EventHubpng/1.png" alt="GFG" width="100%" height="auto" alt="...">
+              <div> <div class="btn-group my-2">
+                <a href="#" class="btn btn-success active" aria-current="page">Registration Link</a>
+                <a href="#" class="btn btn-success">Submit</a>
+                <a href="#" class="btn btn-success">Cancel</a>
+              </div></div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+              <img src="Images/EventHubpng/2.png" alt="GFG" width="100%" height="auto" alt="...">
+              <div> <div class="btn-group my-2">
+                <a href="#" class="btn btn-success active" aria-current="page">Registration Link</a>
+                <a href="#" class="btn btn-success">Submit</a>
+                <a href="#" class="btn btn-success">Cancel</a>
+              </div></div>
+              </div>
+              <div class="carousel-item">
+              <img src="Images/EventHubpng/1j.jpg" alt="GFG" width="100%" height="auto" alt="...">
+              <div> <div class="btn-group my-2">
+                <a href="#" class="btn btn-success active" aria-current="page">Registration Link</a>
+                <a href="#" class="btn btn-success">Submit</a>
+                <a href="#" class="btn btn-success">Cancel</a>
+              </div></div>
+              </div>
+            </div>
+            </div>
+        
+  <div class="row">
+    <div class="col">
+      <div class="bg-danger text-white my-3 py-4 text-center">
+        <div class="card-body">
+          <h1 class="mt-1">Our Special Events</h1>
+          Our Special Events section showcases a curated selection of unique and exciting events. From music festivals and art exhibitions to charity runs and networking events, we provide a diverse range of experiences to cater to all interests. These events are handpicked for their quality, uniqueness, and appeal, ensuring that our users always have access to the most exciting happenings around them.
+          <br>
+          <br>
+          <br>
+          <br>
+          <img class="img" src="Images/EventHubpng/1.png" alt="">
+
+        </div>
+       
+      </div>
+    </div>
+  </div>
+  <h1 class="text-center">Browse Events</h1>
+  <div class="row row-cols-1 row-cols-md-2 g-4 gy-2">
+   
+    <div class="col">
+      <div class="card">
+        <img src="Images/EventHubpng/1j.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <div class="btn-group my-2">
+          <a href="#" class="btn btn-success active" aria-current="page">Registration Link</a>
+          <a href="#" class="btn btn-success">Submit</a>
+          <a href="#" class="btn btn-success">Cancel</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="Images/EventHubpng/4.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <div class="btn-group my-2">
+          <a href="#" class="btn btn-success active" aria-current="page">Registration Link</a>
+          <a href="#" class="btn btn-success">Submit</a>
+          <a href="#" class="btn btn-success">Cancel</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="Images/EventHubpng/3.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        <div class="btn-group my-2">
+          <a href="#" class="btn btn-success active" aria-current="page">Registration Link</a>
+          <a href="#" class="btn btn-success">Submit</a>
+          <a href="#" class="btn btn-success">Cancel</a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card">
+        <img src="Images/EventHubpng/2.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        </div>
+        <div class="btn-group my-2">
+          <a href="#" class="btn btn-success active" aria-current="page">Registration Link</a>
+          <a href="#" class="btn btn-success">Submit</a>
+          <a href="#" class="btn btn-success">Cancel</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
+      <div class="bg-secondary text-white my-3 py-4 text-center">
+        <div class="card-body">
+          <h1 class="mt-1">Our Special Events</h1>
+          Our Special Events section showcases a curated selection of unique and exciting events. From music festivals and art exhibitions to charity runs and networking events, we provide a diverse range of experiences to cater to all interests. These events are handpicked for their quality, uniqueness, and appeal, ensuring that our users always have access to the most exciting happenings around them.
+
+        </div>
+       
+      </div>
+    </div>
+  </div>
+
+  <form class="form">
+    <h2>Get in touch</h2>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+  
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required><br><br>
+  
+    <input type="submit" value="Sign Up">
+  </form>
+      </main>
+ 
+   
+ 
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
   </body>
 </html>

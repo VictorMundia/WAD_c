@@ -1,68 +1,72 @@
 
-body{
-  background-image: url('../Images/EventHubpng/1.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+.form {
+  width: 600px;
+  background-color: rgba(133, 131, 131, 0.61);
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-  h1, h2 {
-    font-size: 100px;
-    font-style:initial;
-    font-family:'Bazooka' ;
-    color: #ff000085;
-    font-weight: 1000;
-    text-shadow: 
-      0 0 10px rgb(255, 0, 0),
-      1px 1px 2px rgba(255, 0, 0, 0.4); 
-    margin: 1rem 0;
-    text-align: center;
-    -webkit-text-stroke: 0.3px #ff0000; 
-     -webkit-text-fill-color: #f9f9f9e5;
-  }
+.form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
 
-  nav a:first-child {
-    order: -1;
-    margin-right:auto;
-  }
-  
-  nav {
-    padding: 0rem;
-    background-color:transparent;
-    text-align: right;
-    display: flex;
-    justify-content: flex-end;
-    flex-wrap: nowrap;
-  }
-  .nav{
-    background-color:transparent;
-    text-align:right;
-    justify-content: flex-end;
-  }
-  nav a {
-    padding: 1rem 1rem;
-    text-decoration: none;
-    color: #ff0000;
-    font-weight: 500;
-    transition: background-color 0.2s ease;
-    font-family: 'Open Sans', sans-serif;
-    margin-left: 0;
-  }
-  
-  .nav a:hover {
-    background-color: transparent;
-    color: #fff;
-  }
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"] {
+  width: 100%;
+  height: 40px;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
 
-.p{
+.form input[type="submit"] {
+  background-color: #4f2626;
+  color: #ffffff;
+  padding: 0.5rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.form input[type="submit"]:hover {
+  background-color: #3f1d1d;
+}
+.form h2 {
   text-align: center;
-  font-size: 30px;
-  color: rgb(143, 0, 0);
+  margin-bottom: 1rem;
+  color: #fff;
 }
-.hello{
-  position:fixed;
-  padding-top: 0rem ;
-  width: 250px;
-  height: 50px;
+.img{
+  max-width:100%;
+  width: 500px;
+  height: 300px;
+
+}
+
+.p {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+}
+.img1{
+  
+  width: 400px;
+  height: 285px;
+}
+.card-img-top {
+  width: 100%;
+  height: auto;
+}
+.card {
+  
+  margin: 1rem;
 }
