@@ -67,6 +67,28 @@
   height: auto;
 }
 .card {
-  
-  margin: 1rem;
+  margin: 2rem;
+  width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  flex-grow: 3;
+  transition: .4s ease;
+
+}
+.card:hover{
+  z-index: 1;
+  width: 400px;
+  opacity: 1;
+  filter: contrast(100%);
+  transform: rotate(0deg);
+  border: 2px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.custom-card {
+  width: 100%;
+  height: 300px; /* Adjust height */
+}
+.custom-card-body {
+  font-size: 1rem; /* Adjust font size */
 }

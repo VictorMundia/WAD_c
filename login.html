@@ -9,29 +9,23 @@
     
 </head>
 <body>
-        <nav class="nav">
-          <a href="index.html"><img src="Images/EventHubpng/logo2.png" alt="logo" width="250px" height="50px"></a>
-          <a href="events.html">Events</a>
-          <a href="event-details.html">Event Details</a>
-          <a href="aboutus.html">AboutUs</a>
-          <a href="login.html">Login</a>
-          <a href="signup.html">Signup</a>
-        </nav>
-        <h2 class="h2">Login to your Account</h2>  
-        <div class="login-form">
-    
-            <form action="/login" method="post">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name" required><br><br>
-          
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email" required><br><br>
-          
-              <label for="password">Password:</label>
-              <input type="password" id="password" name="password" required><br><br>
-          
-              <input type="submit" value="Log in">
-            </form>
-            </div>
+<div class="wrapper">
+  <h1>Welcome</h1>
+  <form action="#">
+    <div class="input-field">
+      <input type="email" id="email" placeholder="Username" required>
+      <i class="bx bxs-user"></i>
+    </div>
+    <div class="input-field">
+      <input type="password" id="password" placeholder="Password" required>
+      <i class="bx bxs-lock-alt"></i>
+    </div>
+    <a href="#" class="forgot">
+      <p>Forgot password</p>
+    </a>
+    <button type="submit" class="login">Login</button>
+    <p class="p">Don't have an account? <a href="signup.html" class="signup">Sign Up</a></p>
+</form>
+</div>
 </body>
 </html>

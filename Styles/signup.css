@@ -1,91 +1,100 @@
 body{
-    background-image: url('../Images/EventHubpng/4.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  background:url(/Images/EventHubpng/1.png)no-repeat ;
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 600px;
 }
-nav a:first-child {
-  order: -1;
-  margin-right:auto;
+.wrapper{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 350px;
+  text-align: center;
+  border:1px solid rgb(241,241,241);
+  border-radius: 12px;
+  padding: 10px 20px;
+  background: transparent;
+  backdrop-filter: blur(6px);
+  box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.5);
 }
 
-nav {
-  padding: 0rem;
-  background-color:transparent;
-  text-align: right;
-  display: flex;
-  justify-content: flex-end;
-  flex-wrap: nowrap;
+.wrapper h1{
+  font-size: 30px;
+  color: #fff;
+
 }
-.nav{
-  background-color:transparent;
-  text-align:right;
-  justify-content: flex-end;
+
+.input-field{
+  position: relative;
 }
-nav a {
-  padding: 1rem 1rem;
+
+.input-field input[type="email"],
+.input-field input[type="password"]{
+  border-radius: 10px;
+  margin: 15px;
+  background: transparent;
+  border: 2px solid rgb(255,255,255);
+  width: 280px;
+  height: 2px;
+  padding: 20px 40px 20px 20px;
+  backdrop-filter: blur(15px);
+}
+.input-field i{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 10px;
+  color:rgb(252,252,252);
+}
+input::placeholder{
+  color:rgb(255,255,255);
+
+}
+.input-field input[type="email"]:not(:focus)::placeholder,
+.input-field input[type="password"]:not(:focus)::placeholder{
+  transform: translateY(0%);
+  transition: transform 0.2s ease-in-out;
+  font-size: 16px;
+}
+
+.input-field input[type="email"]:focus::placeholder,
+.input-field input[type="password"]:focus::placeholder{
+  transform: translateY(-100%);
+  transition: transform 0.2s ease-in-out;
+  font-size: 14px;
+}
+a.forgot{
   text-decoration: none;
-  color: #ff0000;
-  font-weight: 500;
-  transition: background-color 0.2s ease;
-  font-family: 'Open Sans', sans-serif;
-  margin-left: 0;
-}
+  position: relative;
+  color: rgba(255,255,255,0.712);
 
-.nav a:hover {
-  background-color: transparent;
+}
+a.forgot:hover{
+  text-decoration: underline;
+  color: #fffffffd;
+}
+a.signup{
+  text-decoration: none;
+  color: rgba(255,255,255,0.712);
+}
+a.signup:hover{
+  text-decoration: underline;
+  color: #fffffffd;
+}
+.wrapper .login{
+  background: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 45px;
+  width: 200px;
+  height: 30px;
+}
+.p{
   color: #fff;
 }
 
-.a{
-    font-size: 20px;
-    font-style:initial;
-    font-family:'Bazooka' ;
-    color: #ff000085;
-    font-weight: 100;
-    text-shadow: 
-      0 0 10px rgb(255, 0, 0),
-      1px 1px 2px rgba(255, 0, 0, 0.4); 
-}
-.signup-form {
-    float: right;
-    width: 39%;
-    height: 500px;
-    background-color: rgba(133, 131, 131, 0.3);
-    padding: 2rem;
-    margin: 2rem;
-    border-radius: 5px;
-    opacity: 0.5;
-  }
-
-  input[type="submit"] {
-    background-color: #4f2626;
-    color: #ffffff;
-    padding: 0.5rem 2rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-  }
-  input[type="submit"]:hover {
-    background-color: #3f1d1d;
-  }
-  .signup-form input[type="text"],
-.signup-form input[type="email"],
-.signup-form input[type="password"] {
-    
-  width: 100%;
-  height: 40px;
-  padding: 0.5rem;
-  margin-bottom: 1rem;
-  border: none;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-}
-.h2{
-    padding-right: 2rem;
-    font-size: 30px;
-    color: #ff0000;
-    text-align: right;
-}
