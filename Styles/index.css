@@ -70,16 +70,17 @@
   margin: 2rem;
   width: 300px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  flex-grow: 3;
-  transition: .4s ease;
+  flex-grow: 4;
+  transition: .4s ease ;
+  box-sizing: border-box;
 
 }
 .card:hover{
   z-index: 1;
   width: 400px;
-  opacity: 1;
+  opacity: 2;
   filter: contrast(100%);
-  transform: rotate(0deg);
+  transform: scale(1.05);
   border: 2px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -92,7 +93,68 @@
 .custom-card-body {
   font-size: 1rem; /* Adjust font size */
 }
-
-.align{
+.background-section {
+  background-image: url('../Images/EventHub/concert.jpg');
+  background-size: cover; /* This makes the image cover the whole section */
+  background-position: center; /* This centers the image */
+  height: 100vh; /* Adjust the height as needed */
+  color: white; /* Adjust text color for better visibility */
   display: inline-block;
+  text-align: center;
+}
+.div{
+  display: flex;
+  
+}
+
+aside{
+  width: 30%;
+  padding-left: 15px;
+  margin-left: 15px;
+  margin-right: 50px;
+  margin-top: 8rem;
+  float: right;
+  font-style: italic;
+  font-size: larger;
+  font-weight: 600;
+} 
+.sec{
+  width: 30%;
+  margin-left: 20px;
+  margin-top: 12rem;
+  padding-right: 15px;
+  margin-right: 15px;
+  float: left;
+  font-size: 200;
+}
+h1, h2 {
+  font-size: 200px;
+  font-style:initial;
+  font-family:'Bazooka' ;
+  color: #ff000085;
+  font-weight: 1000;
+  text-shadow: 
+    0 0 10px rgb(255, 0, 0),
+    1px 1px 2px rgba(255, 0, 0, 0.4); 
+  margin: 1rem 0;
+  text-align: center;
+  -webkit-text-stroke: 0.3px #ff0000; 
+   -webkit-text-fill-color: #f9f9f9e5;
+} 
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  background-color: #ff0000;
+  margin-top: auto;
+}
+.carousel-home {
+  pointer-events: none;
+}
+
+.left-arrow, .right-arrow {
+  pointer-events: auto;
 }

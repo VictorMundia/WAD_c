@@ -1,9 +1,8 @@
 body{
   background:url(/Images/EventHubpng/1.png)no-repeat ;
-  background-position: center;
+  
   background-size: cover;
-  width: 400px;
-  height: 600px;
+ 
 }
 .wrapper{
   position: absolute;
@@ -99,3 +98,47 @@ a.signup:hover{
 }
 
 
+nav {
+  padding: 0rem;
+  background-color:transparent;
+  text-align: right;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+
+nav a:first-child {
+  order: -1;
+  margin-right:auto;
+}
+.nav{
+  background-color:transparent;
+  text-align:right;
+  justify-content: flex-end;
+}
+.nav a {
+  padding: 1.5rem 1.5rem;
+  text-decoration: none;
+  color: #ff0000;
+  font-weight: 500;
+  transition: background-color 0.2s ease;
+  font-family: 'Open Sans', sans-serif;
+  margin-left: 0;
+}
+
+.nav a:hover {
+  background-color: transparent;
+  color: #fff;
+}
+.a{
+  font-size: 20px;
+  font-style:initial;
+  font-family:'Bazooka' ;
+  color: #ff000085;
+  font-weight: 100;
+  text-shadow: 
+    0 0 10px rgb(255, 0, 0),
+    1px 1px 2px rgba(255, 0, 0, 0.4); 
+
+
+}
