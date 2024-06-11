@@ -18,8 +18,13 @@
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          
+          <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+           </form>
               <li class="nav-item active">
                 <a class="nav-link " aria-current="page" href="#">Home</a>
               </li>
@@ -29,7 +34,7 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Calender</a>
               </li>
-              <li class="nav-item dropdown">
+              <li class="nav-item dropdown">      
                 <a class="nav-link dropdown-toggle" href="aboutus.html" role="button" data-bs-toggle="dropdown" aria-expanded="true">
                   menu
                 </a>
@@ -40,6 +45,7 @@
                 </ul>
               </li>
             </ul>
+            </div>
           </div>
         </div>
       </nav>
@@ -177,11 +183,47 @@
 </div>
 </div>
 </section>
-<footer>
-          <p>Stay in touch</p>
-          <p><a href="login.html">Login</a></p>
-          <p><a href="signup.html">SignUp</a></p>
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h5>About Us</h5>
+        <p>EventHub is a dynamic event organizing, advertising, and social platform designed to bring people together. We provide a space for individuals to discover events near them,<br> purchase tickets, and even create and post their own events. Our platform is built on the principles of community, connection, and celebration. We believe in the power of <br>events to bring people together, create shared experiences, and foster a sense of belonging.</p>
+      </div>
+      <div class="col-md-4">
+        <h5>Quick Links</h5>
+        <ul class="list-unstyled">
+          <li><a href="about.php">About</a></li>
+          <li><a href="contact.php">Contact</a></li>
+          <li><a href="privacy.php">Privacy Policy</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h5>Stay Connected</h5>
+        <ul class="list-inline social-icons">
+          <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
+          <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <p>&copy; 2024 EventHub. All rights reserved.</p>
+        </div>
+        <div class="col-md-6">
+          <p class="text-end">Designed by <a href="https://yourwebsite.com">Your Company</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
 </footer>
+
+
       </main>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
