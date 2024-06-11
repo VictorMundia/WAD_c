@@ -10,7 +10,8 @@
   <title>EventHub</title>
 </head>
   <body >
-    <section class="header">
+    
+  <section class="header">
       <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img src="Images/EventHubpng/logo2.png" alt="logo" width="250px" height="50px"></a>
