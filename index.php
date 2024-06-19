@@ -6,14 +6,14 @@
   <link rel="stylesheet" href="Styles/index.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link rel = "icon" type="image/x-icon" href="Images/EventHubpng/favicon1.png">
-  <script src="index.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <title>EventHub</title>
 </head>
   <body >
     
   <section class="header">
       <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container-fluid">
+        <div class="container">
           <a class="navbar-brand" href="index.html"><img src="Images/EventHubpng/logo2.png" alt="logo" width="250px" height="50px"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -29,19 +29,19 @@
                 <a class="nav-link " aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="aboutus.html">About Us</a>
+                <a class="nav-link" href="aboutus.html">Browse</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Calender</a>
+                <a class="nav-link" href="#">Cart</a>
               </li>
-              <li class="nav-item dropdown">      
+              <li class="nav-item dropdown">        
                 <a class="nav-link dropdown-toggle" href="aboutus.html" role="button" data-bs-toggle="dropdown" aria-expanded="true">
-                  menu
+                  User
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="login.html"> Login</a></li>
+                  <li><a class="dropdown-item" href="login.php"> Login</a></li>
                   <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
-                  <li><a class="dropdown-item" href="event-details.html">Post an Event</a></li>
+                  <li><a class="dropdown-item" href="event-details.html">Profile</a></li>
                 </ul>
               </li>
             </ul>
@@ -200,12 +200,15 @@
       </div>
       <div class="col-md-4">
         <h5>Stay Connected</h5>
+        <div class="icons">
         <ul class="list-inline social-icons">
           <li class="list-inline-item"><a href="#"><i class="fab fa-facebook"></i></a></li>
           <li class="list-inline-item"><a href="#"><i class="fab fa-twitter"></i></a></li>
           <li class="list-inline-item"><a href="#"><i class="fab fa-instagram"></i></a></li>
           <li class="list-inline-item"><a href="#"><i class="fab fa-linkedin"></i></a></li>
         </ul>
+        </div>
+        
       </div>
     </div>
   </div>

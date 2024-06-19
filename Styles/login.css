@@ -1,7 +1,10 @@
 body{
-  background:url(/Images/EventHubpng/1.png)no-repeat ;
   
+  background: url(/Images/EventHubpng/1.png)no-repeat;
+  background-position: center;
   background-size: cover;
+  width: 400px;
+  height: 600px;
  
 }
 .wrapper{

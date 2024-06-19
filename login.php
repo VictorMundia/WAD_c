@@ -15,12 +15,12 @@
     <a href="events.html">Events</a>
     <a href="event-details.html">Event Details</a>
     <a href="aboutus.html">AboutUs</a>
-    <a href="login.html">Login</a>
+    <a href="login.php">Login</a>
     <a href="signup.html">Signup</a>
   </nav>
 <div class="wrapper">
   <h1>Welcome</h1>
-  <form >
+  <form action="#">
     <div class="input-field">
       <i class="fa fa-user-o"></i>
       <input type="email" id="email" placeholder="Username" required>

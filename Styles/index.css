@@ -156,3 +156,6 @@ footer {
 .left-arrow, .right-arrow {
   pointer-events: auto;
 }
+.icons{
+  font-size:30px;
+}
