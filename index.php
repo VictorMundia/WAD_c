@@ -14,7 +14,7 @@
   <section class="header">
       <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
         <div class="container">
-          <a class="navbar-brand" href="index.html"><img src="Images/EventHubpng/logo2.png" alt="logo" width="250px" height="50px"></a>
+          <a class="navbar-brand" href="index.php"><img src="Images/EventHubpng/logo2.png" alt="logo" width="250px" height="50px"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -29,7 +29,7 @@
                 <a class="nav-link " aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="aboutus.html">Browse</a>
+                <a class="nav-link" href="aboutus.php">Browse</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Cart</a>
@@ -40,8 +40,8 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="login.php"> Login</a></li>
-                  <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
-                  <li><a class="dropdown-item" href="event-details.html">Profile</a></li>
+                  <li><a class="dropdown-item" href="signup.php">Sign Up</a></li>
+                  <li><a class="dropdown-item" href="event-details.php">Profile</a></li>
                 </ul>
               </li>
             </ul>
