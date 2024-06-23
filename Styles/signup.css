@@ -1,15 +1,17 @@
 body{
-  background:url(/Images/EventHubpng/1.png)no-repeat ;
+  background:url(../Images/EventHubpng/1.png)no-repeat ;
   background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 
 }
 .wrapper{
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 350px;
-  height: 350px;
+  height: 500px;
   text-align: center;
   border:1px solid rgb(241,241,241);
   border-radius: 12px;
@@ -29,6 +31,7 @@ body{
   position: relative;
 }
 
+.input-field input[type="text"],
 .input-field input[type="email"],
 .input-field input[type="password"]{
   border-radius: 10px;
@@ -51,6 +54,7 @@ input::placeholder{
   color:rgb(255,255,255);
 
 }
+.input-field input[type="text"]:not(:focus)::placeholder,
 .input-field input[type="email"]:not(:focus)::placeholder,
 .input-field input[type="password"]:not(:focus)::placeholder{
   transform: translateY(0%);
@@ -58,6 +62,7 @@ input::placeholder{
   font-size: 16px;
 }
 
+.input-field input[type="text"]:focus::placeholder,
 .input-field input[type="email"]:focus::placeholder,
 .input-field input[type="password"]:focus::placeholder{
   transform: translateY(-100%);

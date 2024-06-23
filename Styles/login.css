@@ -1,97 +1,138 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:"poppins",sans-serif;
+}
 body{
-  background:url(../Images/EventHubpng/1.png)no-repeat ;
-  background-size: cover;
+  background: url(../Images/EventHubpng/7.png);
+  background-color: #c9d6ff;
+  background:linear-gradient(to right,#e2e2e2,#c9d6ff);
+}
+.container{
+  background:#fff;
+  width:450px;
+  padding:1.5rem;
+  margin:50px auto;
+  border-radius:10px;
+  box-shadow:0 20px 35px rgba(0,0,1,0.9);
+}
+form{
+  margin:0 2rem;
+}
+.form-title{
+  font-size:1.5rem;
+  font-weight:bold;
+  text-align:center;
+  padding:1.3rem;
+  margin-bottom:0.4rem;
+}
+input{
+  color:inherit;
+  width:100%;
+  background-color:transparent;
+  border:none;
+  border-bottom:1px solid #757575;
+  padding-left:1.5rem;
+  font-size:15px;
+}
+.input-group{
+  padding:1% 0;
+  position:relative;
 
 }
-.wrapper{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 350px;
-  height: 350px;
-  text-align: center;
-  border:1px solid rgb(241,241,241);
-  border-radius: 12px;
-  padding: 10px 20px;
-  background: transparent;
-  backdrop-filter: blur(6px);
-  box-shadow: 5px 5px 10px 0 rgba(0,0,0,0.5);
+.input-group i{
+  position:absolute;
+  color:black;
 }
-
-.wrapper h1{
-  font-size: 30px;
-  color: #fff;
-
-}
-
-.input-field{
-  position: relative;
-}
-
-.input-field input[type="email"],
-.input-field input[type="password"]{
-  border-radius: 10px;
-  margin: 15px;
-  background: transparent;
-  border: 2px solid rgb(255,255,255);
-  width: 280px;
-  height: 2px;
-  padding: 20px 40px 20px 20px;
-  backdrop-filter: blur(15px);
-}
-.input-field i{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  right: 10px;
-  color:rgb(252,252,252);
+input:focus{
+  background-color: transparent;
+  outline:transparent;
+  border-bottom:2px solid hsl(327,90%,28%);
 }
 input::placeholder{
-  color:rgb(255,255,255);
+  color:transparent;
+}
+label{
+  color:#757575;
+  position:relative;
+  left:1.2em;
+  top:-1.3em;
+  cursor:auto;
+  transition:0.3s ease all;
+}
+input:focus~label,input:not(:placeholder-shown)~label{
+  top:-3em;
+  color:hsl(327,90%,28%);
+  font-size:15px;
+}
+.recover{
+  text-align:right;
+  font-size:1rem;
+  margin-bottom:1rem;
 
 }
-.input-field input[type="email"]:not(:focus)::placeholder,
-.input-field input[type="password"]:not(:focus)::placeholder{
-  transform: translateY(0%);
-  transition: transform 0.2s ease-in-out;
-  font-size: 16px;
+.recover a{
+  text-decoration:none;
+  color:rgb(125,125,235);
 }
-
-.input-field input[type="email"]:focus::placeholder,
-.input-field input[type="password"]:focus::placeholder{
-  transform: translateY(-100%);
-  transition: transform 0.2s ease-in-out;
-  font-size: 14px;
+.recover a:hover{
+  color:blue;
+  text-decoration:underline;
 }
-a.forgot{
-  text-decoration: none;
-  position: relative;
-  color: rgba(255,255,255,0.712);
-
+.btn{
+  font-size:1.1rem;
+  padding:8px 0;
+  border-radius:5px;
+  outline:none;
+  border:none;
+  width:100%;
+  background:rgb(125,125,235);
+  color:white;
+  cursor:pointer;
+  transition:0.9s;
 }
-a.forgot:hover{
-  text-decoration: underline;
-  color: #fffffffd;
+.btn:hover{
+  background:#07001f;
 }
-a.signup{
-  text-decoration: none;
-  color: rgba(255,255,255,0.712);
+.or{
+  font-size:1.1rem;
+  margin-top:0.5rem;
+  text-align:center;
 }
-a.signup:hover{
-  text-decoration: underline;
-  color: #fffffffd;
+.icons{
+  text-align:center;
 }
-.wrapper .login{
-  background: #fff;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  font-weight: 600;
-  border-radius: 45px;
-  width: 200px;
-  height: 30px;
+.icons i{
+  color:rgb(125,125,235);
+  padding:0.8rem 1.5rem;
+  border-radius:10px;
+  font-size:1.5rem;
+  cursor:pointer;
+  border:2px solid #dfe9f5;
+  margin:0 15px;
+  transition:1s;
 }
-.p{
-  color: #fff;
+.icons i:hover{
+  background:#07001f;
+  font-size:1.6rem;
+  border:2px solid rgb(125,125,235);
+}
+.links{
+  display:flex;
+  justify-content:space-around;
+  padding:0 4rem;
+  margin-top:0.9rem;
+  font-weight:bold;
+}
+button{
+  color:rgb(125,125,235);
+  border:none;
+  background-color:transparent;
+  font-size:1rem;
+  font-weight:bold;
+}
+button:hover{
+  text-decoration:underline;
+  color:blue;
 }
