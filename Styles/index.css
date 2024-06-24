@@ -91,14 +91,19 @@
   height: 300px; /* Adjust height */
 }
 
-.background-section {
-  background-image: url('../Images/EventHub/concert.jpg');
+.background-section,.background-section1 {
   background-size: cover; /* This makes the image cover the whole section */
   background-position: center; /* This centers the image */
   height: 100vh; /* Adjust the height as needed */
   color: white; /* Adjust text color for better visibility */
   display: inline-block;
   text-align: center;
+}
+.background-section{
+  background-image: url('../Images/EventHub/night.jpg');
+}
+.background-section1 {
+  background-image: url('../Images/EventHub/concert.jpg')
 }
 .div{
   display: flex;
@@ -158,4 +163,17 @@ footer {
 }
 .icons{
   font-size:30px;
+}
+body{
+  background-color: #f94b00;
+}
+#name{
+  text-align: center;
+  padding: 15%;
+  animation-name: grow;
+  animation-duration:2s;
+}
+@keyframes grow{
+  50%{transform: scale(2, 2)}
+
 }

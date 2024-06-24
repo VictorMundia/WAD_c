@@ -6,11 +6,10 @@
 }
 body{
   background: url(../Images/EventHubpng/7.png);
-  background-color: #c9d6ff;
-  background:linear-gradient(to right,#e2e2e2,#c9d6ff);
+ 
 }
 .container{
-  background:#fff;
+  background:transparent;
   width:450px;
   padding:1.5rem;
   margin:50px auto;
@@ -96,6 +95,7 @@ input:focus~label,input:not(:placeholder-shown)~label{
   background:#07001f;
 }
 .or{
+  color: #dfe9f5;
   font-size:1.1rem;
   margin-top:0.5rem;
   text-align:center;

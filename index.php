@@ -57,7 +57,8 @@ include("connect.php");
       </nav>
     </section>
 
-    <div style="text-align:center; padding:15%;">
+    <section class="background-section1">
+    <div id="name">
       <p  style="font-size:50px; font-weight:bold;">
        Hello  <?php 
        if(isset($_SESSION['email'])){
@@ -67,13 +68,15 @@ include("connect.php");
             echo $row['firstName'].' '.$row['lastName'];
         }
        }
-       ?>
+       ?> <br> Welcome to EventHub
       </p>
       <a href="logout.php">Logout</a>
     </div>
+    </section>
+    
 
       <main>
-        <h1 class="text-center">Welcome to EventHub</h1>
+       
 
         
         <div class="col">

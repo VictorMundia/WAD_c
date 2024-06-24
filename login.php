@@ -13,7 +13,7 @@
 <body>
 <section class="header">
       <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
-        <div class="container">
+        <div class="container-fluid">
           <a class="navbar-brand" href="index.php"><img src="Images/EventHubpng/logo2.png" alt="logo" width="250px" height="50px"></a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -21,10 +21,7 @@
           
           <div class="collapse navbar-collapse justify-content-between" id="navbarNavDropdown">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-           </form>
+  
               <li class="nav-item active">
                 <a class="nav-link " aria-current="page" href="#">Home</a>
               </li>
@@ -74,6 +71,11 @@
             <input type="password" id="password" placeholder="Password" required>
             <label for="password">Password</label>
         </div>
+        <div class="input-group">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="ConfPassword" placeholder="Password" required>
+            <label for="password">Confirm Password</label>
+        </div>
        <input type="submit" class="btn" value="Sign Up" name="signUp">
       </form>
       <p class="or">
@@ -84,7 +86,7 @@
         <i class="fab fa-facebook"></i>
       </div>
       <div class="links">
-        <p>Already Have Account ?</p>
+        <p class="or">Already Have Account ?</p>
         <button id="signInButton">Sign In</button>
       </div>
     </div>
@@ -114,7 +116,7 @@
           <i class="fab fa-facebook"></i>
         </div>
         <div class="links">
-          <p>Don't have account yet?</p>
+          <p class="or">Don't have account yet?</p>
           <button id="signUpButton">Sign Up</button>
         </div>
       </div>
