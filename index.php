@@ -121,9 +121,11 @@ include("connect.php");
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
         <div class="btn-group my-3">
-          <a href="#" class="btn btn-success">Submit</a>
-          <a href="#" class="btn btn-success">Cancel</a>
-        </div>
+      <form method="POST" action="cart.php">
+        <input type="hidden" name="event_id" value="1"> <!-- Replace with actual event ID -->
+        <button type="submit" name="add_to_cart" class="btn btn-success">Add to Cart</button>
+      </form>
+    </div>
       </div>
     </div>
     <div class="col-12 col-md-4 mb-3">
@@ -135,9 +137,11 @@ include("connect.php");
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
         <div class="btn-group my-3">
-          <a href="#" class="btn btn-success">Submit</a>
-          <a href="#" class="btn btn-success">Cancel</a>
-        </div>
+      <form method="POST" action="cart.php">
+        <input type="hidden" name="event_id" value="1"> <!-- Replace with actual event ID -->
+        <button type="submit" name="add_to_cart" class="btn btn-success">Add to Cart</button>
+      </form>
+    </div>
       </div>
     </div>
     <div class="col-12 col-md-4 mb-3">
@@ -147,10 +151,12 @@ include("connect.php");
           <h5 class="card-title">NightLife</h5>
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
         </div>
-        <div class="btn-group my-4">
-          <a href="#" class="btn btn-success">Submit</a>
-          <a href="#" class="btn btn-success">Cancel</a>
-        </div>
+        <div class="btn-group my-3">
+      <form method="POST" action="cart.php">
+        <input type="hidden" name="event_id" value="1"> <!-- Replace with actual event ID -->
+        <button type="submit" name="add_to_cart" class="btn btn-success">Add to Cart</button>
+      </form>
+    </div>
       </div>
     </div>
     <div class="col-12 col-md-4 mb-3">
@@ -160,10 +166,12 @@ include("connect.php");
           <h5 class="card-title">Car Meets</h5>
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
-        <div class="btn-group my-4">
-          <a href="#" class="btn btn-success">Submit</a>
-          <a href="#" class="btn btn-success">Cancel</a>
-        </div>
+        <div class="btn-group my-3">
+      <form method="POST" action="cart.php">
+        <input type="hidden" name="event_id" value="1"> <!-- Replace with actual event ID -->
+        <button type="submit" name="add_to_cart" class="btn btn-success">Add to Cart</button>
+      </form>
+    </div>
       </div>
     </div>
     <div class="col-12 col-md-4 mb-3">
@@ -173,10 +181,12 @@ include("connect.php");
           <h5 class="card-title">Corporate Meetings</h5>
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
-        <div class="btn-group my-4">
-          <a href="#" class="btn btn-success">Submit</a>
-          <a href="#" class="btn btn-success">Cancel</a>
-        </div>
+        <div class="btn-group my-3">
+      <form method="POST" action="cart.php">
+        <input type="hidden" name="event_id" value="1"> <!-- Replace with actual event ID -->
+        <button type="submit" name="add_to_cart" class="btn btn-success">Add to Cart</button>
+      </form>
+    </div>
       </div>
     </div>
     <div class="col-12 col-md-4 mb-3">
@@ -186,10 +196,12 @@ include("connect.php");
           <h5 class="card-title">Kareoke Events</h5>
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
-        <div class="btn-group my-4">
-          <a href="#" class="btn btn-success">Submit</a>
-          <a href="#" class="btn btn-success">Cancel</a>
-        </div>
+        <div class="btn-group my-3">
+      <form method="POST" action="cart.php">
+        <input type="hidden" name="event_id" value="1"> <!-- Replace with actual event ID -->
+        <button type="submit" name="add_to_cart" class="btn btn-success">Add to Cart</button>
+      </form>
+    </div>
       </div>
     </div>
   </div>

@@ -104,7 +104,7 @@
               <label for="password">Password</label>
           </div>
           <p class="recover">
-            <a href="password/resetpassword.php">Recover Password</a>
+            <a href="password/requestreset.php">Recover Password</a>
           </p>
          <input type="submit" class="btn" value="Sign In" name="signIn">
         </form>
