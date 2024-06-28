@@ -50,7 +50,7 @@
       <main>
       <div class="container" id="signup" style="display:none;">
       <h1 class="form-title">Register</h1>
-      <form method="post" action="register.php">
+      <form method="POST" action="register.php">
         <div class="input-group">
            <i class="fas fa-user"></i>
            <input type="text" name="fName" id="fName" placeholder="First Name" required>
@@ -73,7 +73,7 @@
         </div>
         <div class="input-group">
             <i class="fas fa-lock"></i>
-            <input type="password" id="ConfPassword" placeholder="Password" required>
+            <input type="password" id="confirmPassword" placeholder="Confirm Password" required>
             <label for="password">Confirm Password</label>
         </div>
        <input type="submit" class="btn" value="Sign Up" name="signUp">
@@ -92,7 +92,7 @@
     </div>
     <div class="container" id="signIn">
         <h1 class="form-title">Sign In</h1>
-        <form method="post" action="register.php">
+        <form method="POST" action="register.php">
           <div class="input-group">
               <i class="fas fa-envelope"></i>
               <input type="email" name="email" id="email" placeholder="Email" required>
@@ -104,7 +104,7 @@
               <label for="password">Password</label>
           </div>
           <p class="recover">
-            <a href="#">Recover Password</a>
+            <a href="password/resetpassword.php">Recover Password</a>
           </p>
          <input type="submit" class="btn" value="Sign In" name="signIn">
         </form>
