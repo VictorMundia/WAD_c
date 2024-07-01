@@ -5,7 +5,8 @@
   font-family:"poppins",sans-serif;
 }
 body{
-  background: url(../Images/EventHubpng/7.png);
+  background: url(../Images/EventHubpng/1.png);
+  background-size: cover;
  
 }
 .container{
