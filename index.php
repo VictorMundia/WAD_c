@@ -2,6 +2,8 @@
 session_start();
 include("connect.php");
 
+$query = $conn->query("SELECT * FROM events");
+$events = $query->fetch_all(MYSQLI_ASSOC);
 ?>
 
 <!DOCTYPE html>
@@ -47,7 +49,7 @@ include("connect.php");
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="login.php"> Login</a></li>
                   <li><a class="dropdown-item" href="signup.php">Sign Up</a></li>
-                  <li><a class="dropdown-item" href="event-details.php">Profile</a></li>
+                  <li><a class="dropdown-item" href="profile.php">Profile</a></li>
                 </ul>
               </li>
             </ul>
@@ -58,17 +60,19 @@ include("connect.php");
     </section>
 
     <section class="background-section1">
-    <div id="name">
+    <div style="text-align:center; padding:15%;">
       <p  style="font-size:50px; font-weight:bold;">
        Hello  <?php 
        if(isset($_SESSION['email'])){
         $email=$_SESSION['email'];
         $query=mysqli_query($conn, "SELECT users.* FROM `users` WHERE users.email='$email'");
         while($row=mysqli_fetch_array($query)){
-            echo $row['firstName'].' '.$row['lastName'];
+            echo $row['username'];
         }
        }
-       ?> <br> Welcome to EventHub
+       ?>
+       <br>
+       Welcome to EventHub
       </p>
       <a href="logout.php">Logout</a>
     </div>
@@ -114,7 +118,7 @@ include("connect.php");
   <div class="row ">
    
     <div class="col-12 col-md-4 mb-3">
-      <div class="card custom-card ">
+      <div class="card border-danger custom-card ">
         <img src="Images/EventHub/tec.jpg" class="card-img-top" alt="...">
         <div class="card-body custom-card-body">
           <h5 class="card-title">Tec events</h5>
@@ -129,7 +133,7 @@ include("connect.php");
       </div>
     </div>
     <div class="col-12 col-md-4 mb-3">
-      <div class="card custom-card">
+      <div class="card  border-danger custom-card">
         
         <img src="Images/EventHub/concert.jpg" class="card-img-top" alt="...">
         <div class="card-body custom-card-body">
@@ -145,7 +149,7 @@ include("connect.php");
       </div>
     </div>
     <div class="col-12 col-md-4 mb-3">
-      <div class="card custom-card">
+      <div class="card border-danger custom-card ">
         <img src="Images/EventHub/night.jpg" class="card-img-top" alt="...">
         <div class="card-body custom-card-body">
           <h5 class="card-title">NightLife</h5>
@@ -160,7 +164,7 @@ include("connect.php");
       </div>
     </div>
     <div class="col-12 col-md-4 mb-3">
-      <div class="card custom-card">
+      <div class="card border-danger custom-card">
         <img src="Images/EventHub/carmeets.avif" class="card-img-top" alt="...">
         <div class="card-body custom-card-body">
           <h5 class="card-title">Car Meets</h5>
@@ -175,7 +179,7 @@ include("connect.php");
       </div>
     </div>
     <div class="col-12 col-md-4 mb-3">
-      <div class="card custom-card">
+      <div class="card border-danger custom-card">
         <img src="Images/EventHub/coporate.avif" class="card-img-top" alt="...">
         <div class="card-body custom-card-body">
           <h5 class="card-title">Corporate Meetings</h5>
@@ -190,10 +194,10 @@ include("connect.php");
       </div>
     </div>
     <div class="col-12 col-md-4 mb-3">
-      <div class="card custom-card">
+      <div class="card border-danger custom-card">
         <img src="Images/EventHub/Kareoke.avif" class="card-img-top" alt="...">
         <div class="card-body custom-card-body">
-          <h5 class="card-title">Kareoke Events</h5>
+          <h5 class="card-title">Karaoke Events</h5>
           <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
         </div>
         <div class="btn-group my-3">
@@ -207,6 +211,31 @@ include("connect.php");
   </div>
 </div>
 </div> 
+<div class="container">
+        <h1>Browse Events</h1>
+        <div class="row">
+            <?php foreach ($events as $event): ?>
+            <div class="col-12 col-md-4 mb-3">
+                <div class="card custom-card">
+                    <img src="<?php echo $event['image']; ?>" class="card-img-top" alt="<?php echo $event['name']; ?>">
+                    <div class="card-body custom-card-body">
+                        <h5 class="card-title"><?php echo $event['name']; ?></h5>
+                        <p class="card-text"><?php echo $event['description']; ?></p>
+                        <p class="card-text">Price: $<?php echo $event['price']; ?></p>
+                        <form action="add_to_cart.php" method="POST">
+                            <input type="hidden" name="event_id" value="<?php echo $event['id']; ?>">
+                            <div class="mb-3">
+                                <label for="quantity" class="form-label">Quantity</label>
+                                <input type="number" name="quantity" class="form-control" value="1" min="1">
+                            </div>
+                            <button type="submit" class="btn btn-success">Add to Cart</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <?php endforeach; ?>
+        </div>
+    </div>
 <section class="background-section">
   <div>
     <section class="sec">

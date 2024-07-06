@@ -111,10 +111,11 @@ input:focus~label,input:not(:placeholder-shown)~label{
   font-size:1.5rem;
   cursor:pointer;
   border:2px solid #dfe9f5;
+  transition: .2s ease ease-in-out;
   margin:0 15px;
-  transition:1s;
 }
 .icons i:hover{
+
   background:#07001f;
   font-size:1.6rem;
   border:2px solid rgb(125,125,235);

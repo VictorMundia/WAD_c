@@ -1,42 +1,23 @@
-<?php 
-// Enable error reporting for debugging
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
+<?php
 session_start();
-
 include 'connect.php';
 
 if (isset($_POST['signUp'])) {
-    $firstName = isset($_POST['fName']) ? htmlspecialchars($_POST['fName']) : '';
-    $lastName = isset($_POST['lName']) ? htmlspecialchars($_POST['lName']) : '';
-    $email = isset($_POST['email']) ? htmlspecialchars($_POST['email']) : '';
-    $password = isset($_POST['password']) ? $_POST['password'] : '';
-    $confirmPassword = isset($_POST['confirmPassword']) ? $_POST['confirmPassword'] : '';
+    $username = $_POST['username'];
+    $firstName = $_POST['fName'];
+    $lastName = $_POST['lName'];
+    $email = $_POST['email'];
+    $password = md5($_POST['password']);
 
-    if ($password != $confirmPassword) {
-        echo "Passwords do not match!";
-        exit();
-    }
-
-    // Encrypting the password
-    $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
-
-    // Using prepared statements to prevent SQL injection
-    $checkEmail = $conn->prepare("SELECT * FROM users WHERE email = ?");
-    $checkEmail->bind_param("s", $email);
-    $checkEmail->execute();
-    $result = $checkEmail->get_result();
+    $checkEmail = "SELECT * FROM users WHERE email='$email'";
+    $result = $conn->query($checkEmail);
 
     if ($result->num_rows > 0) {
         echo "Email Address Already Exists!";
     } else {
-        $insertQuery = $conn->prepare("INSERT INTO users (firstName, lastName, email, password) VALUES (?, ?, ?, ?)");
-        $insertQuery->bind_param("ssss", $firstName, $lastName, $email, $hashedPassword);
-
-        if ($insertQuery->execute()) {
+        $insertQuery = "INSERT INTO users(username, firstName, lastName, email, password) VALUES ('$username', '$firstName', '$lastName', '$email', '$password')";
+        if ($conn->query($insertQuery) === TRUE) {
             header("Location: index.php");
-            exit();
         } else {
             echo "Error: " . $conn->error;
         }
@@ -44,28 +25,17 @@ if (isset($_POST['signUp'])) {
 }
 
 if (isset($_POST['signIn'])) {
-    $email = isset($_POST['email']) ? htmlspecialchars($_POST['email']) : '';
-    $password = isset($_POST['password']) ? $_POST['password'] : '';
+    $username = $_POST['username'];
+    $password = md5($_POST['password']);
 
-    // Using prepared statements to prevent SQL injection
-    $sql = $conn->prepare("SELECT * FROM users WHERE email = ?");
-    $sql->bind_param("s", $email);
-    $sql->execute();
-    $result = $sql->get_result();
+    $checkUser = "SELECT * FROM users WHERE username='$username' AND password='$password'";
+    $result = $conn->query($checkUser);
 
     if ($result->num_rows > 0) {
-        $row = $result->fetch_assoc();
-        
-        // Verifying the password
-        if (password_verify($password, $row['password'])) {
-            $_SESSION['email'] = $row['email'];
-            header("Location: index.php");
-            exit();
-        } else {
-            echo "Incorrect Email or Password";
-        }
+        $_SESSION['username'] = $username;
+        header("Location: index.php");
     } else {
-        echo "Incorrect Email or Password";
+        echo "Invalid Username or Password!";
     }
 }
 ?>
