@@ -1,4 +1,33 @@
+<?php
+session_start();
+include("connect.php");
 
+if (!isset($_SESSION['username'])) {
+    header("Location: login.php");
+    exit();
+}
+
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
+$username = $_SESSION['username'];
+
+// Fetch user information
+$query = $conn->prepare("SELECT * FROM users WHERE username=?");
+$query->bind_param("s", $username);
+$query->execute();
+$result = $query->get_result();
+
+if ($result->num_rows > 0) {
+    $user = $result->fetch_assoc();
+    $user_id = $user['username'];
+} else {
+    echo "Error: User not found.";
+    exit();
+}
+
+$query->close();
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -35,8 +64,7 @@
                         <a class="nav-link " aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="aboutus.php">Browse</a>
-                    </li>
+                        <a class="nav-link" href="aboutus.php">Browse</a></li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Cart</a>
                     </li>
@@ -56,12 +84,12 @@
     </nav>
 </section>
 <main>
-    <div class="container mt-5">
+    <div id="updateuser" class="container mt-5">
         <h1>User Profile</h1>
         <div class="card mb-3">
             <div class="card-body">
                 <h5 class="card-title">Update User Details</h5>
-                <form method="POST" action="profile.php">
+                <form method="POST" action="register.php">
                     <div class="mb-3">
                         <label for="username" class="form-label">Username</label>
                         <input type="text" class="form-control" id="username" name="username" value="<?php echo htmlspecialchars($user['username']); ?>" required>
@@ -75,10 +103,10 @@
             </div>
         </div>
 
-        <div class="card mb-3">
+        <div id="deleteuser" class="card mb-3">
             <div class="card-body">
                 <h5 class="card-title">Delete Account</h5>
-                <form method="POST" action="profile.php">
+                <form method="POST" action="register.php">
                     <button type="submit" name="delete_account" class="btn btn-danger">Delete Account</button>
                 </form>
             </div>

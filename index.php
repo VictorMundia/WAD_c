@@ -121,13 +121,13 @@ $events = $query->fetch_all(MYSQLI_ASSOC);
       <div class="card border-danger custom-card ">
         <img src="Images/EventHub/tec.jpg" class="card-img-top" alt="...">
         <div class="card-body custom-card-body">
-          <h5 class="card-title">Tec events</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <h5 class="card-title">Tech events</h5>
+          <p class="card-text">Unleash the Future: Dive into cutting-edge technology at our tech event! From AI breakthroughs to quantum computing, join us for inspiring talks, hands-on workshops, and networking with industry experts. 🚀</p>
         </div>
         <div class="btn-group my-3">
       <form method="POST" action="cart.php">
         <input type="hidden" name="event_id" value="1"> <!-- Replace with actual event ID -->
-        <button type="submit" name="add_to_cart" class="btn btn-success">Add to Cart</button>
+        <button type="submit" name="add_to_cart" class="btn btn-success">View</button>
       </form>
     </div>
       </div>
@@ -138,12 +138,12 @@ $events = $query->fetch_all(MYSQLI_ASSOC);
         <img src="Images/EventHub/concert.jpg" class="card-img-top" alt="...">
         <div class="card-body custom-card-body">
           <h5 class="card-title">Concerts</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text">Melodic Magic: Get ready to sway, sing, and dance! Our concert series features chart-topping artists, mind-blowing light shows, and an electric atmosphere. Secure your spot for an unforgettable night of music. 🎵🎤</p>
         </div>
         <div class="btn-group my-3">
       <form method="POST" action="cart.php">
         <input type="hidden" name="event_id" value="1"> <!-- Replace with actual event ID -->
-        <button type="submit" name="add_to_cart" class="btn btn-success">Add to Cart</button>
+        <button type="submit" name="add_to_cart" class="btn btn-success">View</button>
       </form>
     </div>
       </div>
@@ -153,12 +153,13 @@ $events = $query->fetch_all(MYSQLI_ASSOC);
         <img src="Images/EventHub/night.jpg" class="card-img-top" alt="...">
         <div class="card-body custom-card-body">
           <h5 class="card-title">NightLife</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+          <p class="card-text"> When the sun sets, the party begins! Join our nightlife events for pulsating beats, neon vibes, and a crowd that knows how to groove. Whether it’s a rooftop soirée or an underground club, the night is yours. 🌙🕺
+          .</p>
         </div>
         <div class="btn-group my-3">
       <form method="POST" action="cart.php">
         <input type="hidden" name="event_id" value="1"> <!-- Replace with actual event ID -->
-        <button type="submit" name="add_to_cart" class="btn btn-success">Add to Cart</button>
+        <button type="submit" name="add_to_cart" class="btn btn-success">View</button>
       </form>
     </div>
       </div>
@@ -168,12 +169,12 @@ $events = $query->fetch_all(MYSQLI_ASSOC);
         <img src="Images/EventHub/carmeets.avif" class="card-img-top" alt="...">
         <div class="card-body custom-card-body">
           <h5 class="card-title">Car Meets</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text">Rev Your Engines: Calling all gearheads! Our car meets are a paradise for petrol enthusiasts. Show off your ride, admire custom builds, and connect with fellow car lovers. From classic muscle cars to sleek imports, it’s a horsepower celebration. 🚗💨</p>
         </div>
         <div class="btn-group my-3">
       <form method="POST" action="cart.php">
         <input type="hidden" name="event_id" value="1"> <!-- Replace with actual event ID -->
-        <button type="submit" name="add_to_cart" class="btn btn-success">Add to Cart</button>
+        <button type="submit" name="add_to_cart" class="btn btn-success">View</button>
       </form>
     </div>
       </div>
@@ -183,12 +184,12 @@ $events = $query->fetch_all(MYSQLI_ASSOC);
         <img src="Images/EventHub/coporate.avif" class="card-img-top" alt="...">
         <div class="card-body custom-card-body">
           <h5 class="card-title">Corporate Meetings</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text">Business Brilliance: Elevate your professional game at our corporate meetings. Network with industry leaders, gain insights from thought-provoking keynotes, and forge partnerships that drive success. Sharpen your skills and make waves in the business world. </p>
         </div>
         <div class="btn-group my-3">
       <form method="POST" action="cart.php">
         <input type="hidden" name="event_id" value="1"> <!-- Replace with actual event ID -->
-        <button type="submit" name="add_to_cart" class="btn btn-success">Add to Cart</button>
+        <button type="submit" name="add_to_cart" class="btn btn-success">View</button>
       </form>
     </div>
       </div>
@@ -198,12 +199,12 @@ $events = $query->fetch_all(MYSQLI_ASSOC);
         <img src="Images/EventHub/Kareoke.avif" class="card-img-top" alt="...">
         <div class="card-body custom-card-body">
           <h5 class="card-title">Karaoke Events</h5>
-          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text">Sing Your Heart Out: Grab the mic and unleash your inner superstar! Our karaoke events are where dreams become melodies. Belt out your favorite tunes, share the stage with friends, and revel in the applause. 🎤🌟</p>
         </div>
         <div class="btn-group my-3">
       <form method="POST" action="cart.php">
         <input type="hidden" name="event_id" value="1"> <!-- Replace with actual event ID -->
-        <button type="submit" name="add_to_cart" class="btn btn-success">Add to Cart</button>
+        <button type="submit" name="add_to_cart" class="btn btn-success">View</button>
       </form>
     </div>
       </div>
@@ -211,31 +212,6 @@ $events = $query->fetch_all(MYSQLI_ASSOC);
   </div>
 </div>
 </div> 
-<div class="container">
-        <h1>Browse Events</h1>
-        <div class="row">
-            <?php foreach ($events as $event): ?>
-            <div class="col-12 col-md-4 mb-3">
-                <div class="card custom-card">
-                    <img src="<?php echo $event['image']; ?>" class="card-img-top" alt="<?php echo $event['name']; ?>">
-                    <div class="card-body custom-card-body">
-                        <h5 class="card-title"><?php echo $event['name']; ?></h5>
-                        <p class="card-text"><?php echo $event['description']; ?></p>
-                        <p class="card-text">Price: $<?php echo $event['price']; ?></p>
-                        <form action="add_to_cart.php" method="POST">
-                            <input type="hidden" name="event_id" value="<?php echo $event['id']; ?>">
-                            <div class="mb-3">
-                                <label for="quantity" class="form-label">Quantity</label>
-                                <input type="number" name="quantity" class="form-control" value="1" min="1">
-                            </div>
-                            <button type="submit" class="btn btn-success">Add to Cart</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-            <?php endforeach; ?>
-        </div>
-    </div>
 <section class="background-section">
   <div>
     <section class="sec">
@@ -285,9 +261,7 @@ $events = $query->fetch_all(MYSQLI_ASSOC);
         <div class="col-md-6">
           <p>&copy; 2024 EventHub. All rights reserved.</p>
         </div>
-        <div class="col-md-6">
-          <p class="text-end">Designed by <a href="https://yourwebsite.com">Your Company</a></p>
-        </div>
+        
       </div>
     </div>
   </div>
