@@ -55,7 +55,7 @@ if (isset($_SESSION['email'])) {
 </head>
 <body>
   <section class="header">
-      <!-- Include your navbar here -->
+      
        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
   <form class="d-flex">

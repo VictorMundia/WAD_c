@@ -1,9 +1,16 @@
 <?php 
 session_start();
+
+//Include the database connection file
 include("connect.php");
+
+//Include the navigation template file
 include("templates/nav.php");
 
+//Query the database to recieve all elements
 $query = $conn->query("SELECT * FROM events");
+
+//Fetch all event from the database query
 $events = $query->fetch_all(MYSQLI_ASSOC);
 ?>
 

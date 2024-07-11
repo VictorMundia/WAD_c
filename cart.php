@@ -1,7 +1,9 @@
 <?php
 session_start();
+
 include("connect.php");
-include("templates/nav.php");
+
+include ("templates/nav.php");
 
 // Initialize the cart if it doesn't exist
 if(!isset($_SESSION['cart'])) {
@@ -49,7 +51,7 @@ if (!empty($_SESSION['cart'])) {
                 <div class="card-body">
                   <h5 class="card-title"><?php echo htmlspecialchars($item['name']); ?></h5>
                   <p class="card-text">Price: $<?php echo htmlspecialchars($item['price']); ?></p>
-                  <!-- You can add more details here if needed -->
+                  
                   <a href="remove_from_cart.php?event_id=<?php echo htmlspecialchars($item['id']); ?>" class="btn btn-danger">Remove</a>
                 </div>
               </div>
