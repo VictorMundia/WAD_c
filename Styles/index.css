@@ -150,10 +150,7 @@ body {
   flex-direction: column;
 }
 
-footer {
- background-color: #333333;
-  margin-top: auto;
-}
+
 .carousel-home {
   pointer-events: none;
 }
