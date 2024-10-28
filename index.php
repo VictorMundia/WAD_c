@@ -32,19 +32,13 @@ $events = $query->fetch_all(MYSQLI_ASSOC);
 <div style="text-align:center; padding:15%;">
   <p style="font-size:50px; font-weight:bold;">
     Hello 
-
     <br>
     Welcome to EventHub
   </p>
 </div>
 
     </section>
-    
-
       <main>
-       
-
-        
         <div class="col">
           <div class="container"></div>
         <div class="carousel-size">
@@ -68,17 +62,12 @@ $events = $query->fetch_all(MYSQLI_ASSOC);
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
               <span class="visually-hidden">Next</span>
             </button>
-
-
-        
           </div>
             </div>
         
-
   <h1 class="text-center">Browse Events</h1>
 <div class="container">
-  <div class="row ">
-   
+  <div class="row ">   
     <div class="col-12 col-md-4 mb-3">
       <div class="card border-danger custom-card ">
         <img src="Images/EventHub/tec.jpg" class="card-img-top" alt="...">
@@ -88,15 +77,14 @@ $events = $query->fetch_all(MYSQLI_ASSOC);
         </div>
         <div class="btn-group my-3">
       <form method="POST" action="cart.php">
-        <input type="hidden" name="event_id" value="1"> <!-- Replace with actual event ID -->
+        <input type="hidden" name="event_id" value="1">
         <button type="submit" name="add_to_cart" class="btn btn-success">View</button>
       </form>
     </div>
       </div>
     </div>
     <div class="col-12 col-md-4 mb-3">
-      <div class="card  border-danger custom-card">
-        
+      <div class="card  border-danger custom-card">  
         <img src="Images/EventHub/concert.jpg" class="card-img-top" alt="...">
         <div class="card-body custom-card-body">
           <h5 class="card-title">Concerts</h5>
@@ -104,7 +92,7 @@ $events = $query->fetch_all(MYSQLI_ASSOC);
         </div>
         <div class="btn-group my-3">
       <form method="POST" action="cart.php">
-        <input type="hidden" name="event_id" value="1"> <!-- Replace with actual event ID -->
+        <input type="hidden" name="event_id" value="1">
         <button type="submit" name="add_to_cart" class="btn btn-success">View</button>
       </form>
     </div>
@@ -120,7 +108,7 @@ $events = $query->fetch_all(MYSQLI_ASSOC);
         </div>
         <div class="btn-group my-3">
       <form method="POST" action="cart.php">
-        <input type="hidden" name="event_id" value="1"> <!-- Replace with actual event ID -->
+        <input type="hidden" name="event_id" value="1">
         <button type="submit" name="add_to_cart" class="btn btn-success">View</button>
       </form>
     </div>
@@ -135,7 +123,7 @@ $events = $query->fetch_all(MYSQLI_ASSOC);
         </div>
         <div class="btn-group my-3">
       <form method="POST" action="cart.php">
-        <input type="hidden" name="event_id" value="1"> <!-- Replace with actual event ID -->
+        <input type="hidden" name="event_id" value="1"> 
         <button type="submit" name="add_to_cart" class="btn btn-success">View</button>
       </form>
     </div>
@@ -150,7 +138,7 @@ $events = $query->fetch_all(MYSQLI_ASSOC);
         </div>
         <div class="btn-group my-3">
       <form method="POST" action="cart.php">
-        <input type="hidden" name="event_id" value="1"> <!-- Replace with actual event ID -->
+        <input type="hidden" name="event_id" value="1">
         <button type="submit" name="add_to_cart" class="btn btn-success" >View</button>
       </form>
     </div>
@@ -165,7 +153,7 @@ $events = $query->fetch_all(MYSQLI_ASSOC);
         </div>
         <div class="btn-group my-3">
       <form method="POST" action="cart.php">
-        <input type="hidden" name="event_id" value="1"> <!-- Replace with actual event ID -->
+        <input type="hidden" name="event_id" value="1"> 
         <button type="submit" name="add_to_cart" class="btn btn-success">View</button>
       </form>
     </div>
