@@ -1,6 +1,5 @@
 <?php
 // Start the PHP session
-session_start();
 
 // Include the database connection file
 include 'connect.php';
